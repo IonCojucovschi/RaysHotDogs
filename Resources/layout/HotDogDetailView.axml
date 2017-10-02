@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+        <ImageView
+            android:src="@android:drawable/ic_menu_gallery"
+            android:layout_width="match_parent"
+            android:layout_height="132.5dp"
+            android:id="@+id/hotDogImageView"
+            android:layout_gravity="center_horizontal" />
+        <TextView
+            android:text="Hot Dog Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/hotDogNameTExtView"
+            android:textSize="20dp"
+            android:paddingTop="20dp"
+            android:textColor="#ffe0e0e0" />
+        <TextView
+            android:text="Sort description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/shortDescriptionTextView"
+            android:textSize="16dp"
+            android:paddingTop="20dp"
+            android:textColor="#ffe0e0e0" />
+        <TextView
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/descriptionTextView"
+            android:textSize="16dp"
+            android:paddingTop="20dp"
+            android:textColor="#ffe0e0e0"
+            android:editable="false" />
+        <TextView
+            android:text="Price: 1111"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/priceTextView"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:paddingTop="20dp"
+            android:textColor="#ffe0e0e0" />
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent">
+            <Button
+                android:text="Cancel"
+                android:id="@+id/cancelButton"
+                android:layout_width="wrap_content"
+                android:layout_height="40.5dp"
+                android:layout_marginTop="6.0dp" />
+            <EditText
+                android:inputType="number"
+                android:id="@+id/amountEditText"
+                android:text="1"
+                android:layout_width="85.0dp"
+                android:layout_heigth="40dp"
+                android:background="@android:color/white"
+                android:textColor="@android:color/black"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_height="31.0dp"
+                android:layout_marginRight="0.0dp"
+                android:layout_marginTop="24dp" />
+            <Button
+                android:text="Order now!"
+                android:layout_width="wrap_content"
+                android:layout_heigth="wrap_content"
+                android:id="@+id/orderButton"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="12.5dp"
+                android:layout_marginRight="0.0dp"
+                android:layout_marginBottom="14.5dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="224dp" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
